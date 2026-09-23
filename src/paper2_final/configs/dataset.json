@@ -1,0 +1,9 @@
+{
+  "baseline_id": "PAPER2_V4_STATIC25_20260906",
+  "sample_count": 25,
+  "train_count": 16,
+  "development_count": 9,
+  "excluded_dates": ["2024-08-28"],
+  "lock_sha256": "7dcd61b142330cd42084bffd93f5acc3f157342940f58f8d4ab2e1d4501d6073"
+}
+

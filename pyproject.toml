@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper2-final"
+version = "1.0.0"
+description = "WRMP-BASGT bridge track-geometry experiment code"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy",
+  "pandas",
+  "scipy",
+  "scikit-learn",
+  "torch",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["src/paper2_final/models/vendor"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"paper2_final" = ["configs/*.json"]
+"paper2_final.models.vendor.tslib_vendor" = ["LICENSE", "NOTICE.md"]
